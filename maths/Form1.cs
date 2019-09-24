@@ -27,6 +27,37 @@ namespace maths
 
             RTB.AppendText(i1 + "\n" + i2 + "\n" + i3 + "\n" + i4 + "\n" + i5 + "\n" + i6 + "\n");
             RTB.AppendText(d1 + "\n" + d2 + "\n" + d3 + "\n");
+
+            string st = "3";
+            try
+            {
+                int it = int.Parse(st);
+            }
+            catch
+            {
+                MessageBox.Show(st + " is not an integar");
+            }
+
+            string s2 = "3.2";
+            try
+            {
+                int it = int.Parse(s2);
+            }
+            catch
+            {
+                MessageBox.Show(s2 + " is not an integer");
+                int i7 = 0;
+            }
+
+            string s3 = "pi";
+            try
+            {
+                double d7 = double.Parse(s3);
+            }
+            catch
+            {
+                double d7 = 0;
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
